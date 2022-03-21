@@ -1,0 +1,29 @@
+.stock {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+
+.td_amount {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+  padding-right: 50px;
+  color: #ad5502;
+}
+
+.mark {
+  display: flex;
+  justify-content: space-between;
+}
+
+.td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+  padding-right: 50px;
+}
+
+
+.tr:hover {background-color: #D6EEEE;}
