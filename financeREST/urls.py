@@ -19,9 +19,9 @@ from . import views
 
 urlpatterns = [
     path('', views.apiOverview),
-    path('stock-list/', views.stockList),
-    path('stock-detail/<str:pk>/', views.stockDetail),
-    path('stock-create/', views.stockCreate),
-    path('stock-update/<str:pk>/', views.stockUpdate),
-    path('stock-delete/<str:pk>/', views.stockDelete),
+    path('/stock-list/', views.stockList),
+    path('/stock-detail/<str:pk>/', views.stockDetail),
+    path('/stock-create/', views.stockCreate),
+    path('/stock-update/<str:pk>/', views.stockUpdate),
+    path('/stock-delete/<str:pk>/', views.stockDelete),
 ]

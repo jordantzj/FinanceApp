@@ -15,7 +15,7 @@ function PortfolioItem(props) {
 
     async function onDeleteStockHandler() {
         setIsRefreshed(true)
-        await fetch('http://127.0.0.1:8000/stock-delete/' + props.id, {
+        await fetch('http://127.0.0.1:8000/api/stock-delete/' + props.id, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

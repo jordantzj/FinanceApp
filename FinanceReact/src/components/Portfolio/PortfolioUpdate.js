@@ -10,7 +10,7 @@ function PortfolioUpdate(props) {
 
     async function onUpdateStockDataHandler(stockData){
         setIsRefreshed(true)
-         await fetch('http://127.0.0.1:8000/stock-update/' + props.id + '/',{
+         await fetch('http://127.0.0.1:8000/api/stock-update/' + props.id + '/',{
             method: 'POST',
             body: JSON.stringify(stockData),
             headers: {

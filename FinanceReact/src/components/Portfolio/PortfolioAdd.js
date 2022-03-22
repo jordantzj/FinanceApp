@@ -4,7 +4,7 @@ import Modal from '../UI/Modal';
 
 function PortfolioAdd(props) {
     async function onSaveStockDataHandler(stockData){
-         await fetch('http://127.0.0.1:8000/stock-create/',{
+         await fetch('http://127.0.0.1:8000/api/stock-create/',{
             method: 'POST',
             body: JSON.stringify(stockData),
             headers: {

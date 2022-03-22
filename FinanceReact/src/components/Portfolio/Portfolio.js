@@ -15,7 +15,7 @@ function Portfolio(props) {
 
 
     const fetchStocklist = useCallback(async () => {
-        const response = await fetch('http://127.0.0.1:8000/stock-list/')
+        const response = await fetch('http://127.0.0.1:8000/api/stock-list/')
         const data = await response.json();
 
         setStockLists(data)
